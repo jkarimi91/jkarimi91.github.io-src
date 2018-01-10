@@ -2,17 +2,21 @@
   <nav>
     <ul class="nav nav-pills float-right">
       <li class="nav-item">
-        <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link active" href={{ INDEX_URL }}>Blog <span class="sr-only">(current)</span></a>
       </li>
       {% for page in pages %}
-        <li class="nav-item">
-          <a class="nav-link" href="/{{ page.url }}">{{ page.title }}</a>
-        </li>
+        {% if page.title != 'Home' %}
+          <li class="nav-item">
+            <a class="nav-link" href="/{{ page.url }}">{{ page.title }}</a>
+          </li>
+        {% endif %}
       {% endfor %}
       <!-- <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
       </li> -->
     </ul>
   </nav>
-  <h3 class="text-muted">{{ SITENAME }}</h3>
+  <h3>
+    <a class="text-muted no-underline" href="/">{{ SITENAME }}</a>
+  </h3>
 </header>

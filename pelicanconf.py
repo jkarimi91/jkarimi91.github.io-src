@@ -33,7 +33,15 @@ DEFAULT_PAGINATION = False
 
 THEME = 'theme'
 
-PAGE_URL = '{slug}.html'
+PAGE_URL = '{slug}'
 PAGE_SAVE_AS = '{slug}.html'
+
+ARTICLE_URL = 'blog/{slug}'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLES_PATH = ['blog']
+
+INDEX_SAVE_AS = 'blog/index.html'
+INDEX_URL = '/blog'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
