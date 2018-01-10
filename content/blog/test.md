@@ -1,4 +1,4 @@
 Title: Test Post
-Date: 2018-01-08
+Date: 1/8/18
 
 Hello world!

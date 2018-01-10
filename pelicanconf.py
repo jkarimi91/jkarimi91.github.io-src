@@ -43,5 +43,7 @@ ARTICLES_PATH = ['blog']
 INDEX_SAVE_AS = 'blog/index.html'
 INDEX_URL = '/blog'
 
+DEFAULT_DATE_FORMAT = '%b %d %Y'
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
