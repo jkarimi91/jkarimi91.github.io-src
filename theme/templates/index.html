@@ -8,7 +8,7 @@
     <h1 class="mb-4">Blog</h1>
     <ul class="no-bullets">
     {% for article in articles %}
-      <li>
+    <li>
       <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
       <label>Posted on <strong>{{ article.locale_date }}</strong></label>
       {{ article.summary }}

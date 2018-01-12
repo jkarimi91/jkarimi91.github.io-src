@@ -4,5 +4,9 @@ a:hover.no-underline{text-decoration: none}
 /* For blog list i.e. index.html */
 ul.no-bullets{list-style: none}
 
-/* Put space between page headers and their content */
-h1.content-space{padding-bottom: }
+/* Profile link icons for the About page */
+.profile-links img{
+  height: 20pt;
+  margin-bottom: 16pt;
+}
+.profile-links a:hover{text-decoration: none}
