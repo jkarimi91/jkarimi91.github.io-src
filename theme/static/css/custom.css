@@ -1,2 +1,8 @@
 /* For the home page link */
 a:hover.no-underline{text-decoration: none}
+
+/* For blog list i.e. index.html */
+ul.no-bullets{list-style: none}
+
+/* Put space between page headers and their content */
+h1.content-space{padding-bottom: }

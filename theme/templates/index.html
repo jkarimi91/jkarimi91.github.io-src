@@ -4,15 +4,19 @@
 
 {% block content %}
 <div class="row">
-  <div class="col-md-8">
-    <h1>Blog</h1>
+  <div class="col-md-12">
+    <h1 class="mb-4">Blog</h1>
+    <ul class="no-bullets">
     {% for article in articles %}
+      <li>
       <h2><a href="/{{ article.url }}">{{ article.title }}</a></h2>
       <label>Posted on <strong>{{ article.locale_date }}</strong></label>
-      {{ article.content|truncate(110) }}
+      {{ article.summary }}
+    </li>
     {% else %}
       No posts yet!
     {% endfor %}
+  </ul>
   </div>
 </div>
 {% endblock %}
