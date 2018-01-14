@@ -2,6 +2,10 @@
 <html lang="en">
 
 <head>
+  {% if GOOGLE_ANALYTICS %}
+    {% include "analytics.html" %}
+  {% endif %}
+
   <title>{% block title %}{% endblock %}</title>
 
   <!-- Latest compiled and minified Bootstrap CSS -->

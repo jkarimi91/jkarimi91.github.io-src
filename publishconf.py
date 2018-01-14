@@ -12,3 +12,5 @@ from pelicanconf import *
 
 # Do not use test posts in published site.
 IGNORE_FILES = ['.#*', 'test*.md']
+
+GOOGLE_ANALYTICS = 'UA-55018084-2'
