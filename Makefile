@@ -124,10 +124,15 @@ cf_upload: publish
 ghp: clean publish
 	# p flag forces success even if dir exists
 	mkdir -p $(GHPDIR)
+
 	# * removes all non-hidden files but not the dir
 	rm -rf $(GHPDIR)/*
+
 	# * copies all files but not the dir
 	cp -r $(OUTPUTDIR)/* $(GHPDIR)
+	
+	# must be 1-liner or else the cd is undone
+	cd $(GHPDIR) && git add . && git commit -m 'Generate ghp site' && git push -u origin master
 
 
 .PHONY: html help clean regenerate serve serve-global devserver stopserver publish ssh_upload rsync_upload dropbox_upload ftp_upload s3_upload cf_upload github
