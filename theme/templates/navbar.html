@@ -2,7 +2,7 @@
   <nav>
     <ul class="nav float-right">
       <li class="nav-item">
-        <a class="nav-link" href={{ INDEX_URL }}>Blog <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href={{ INDEX_URL }}>Blog</a>
       </li>
       {% for page in pages %}
         {% if page.title != 'Home' %}
@@ -11,9 +11,6 @@
           </li>
         {% endif %}
       {% endfor %}
-      <!-- <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
-      </li> -->
     </ul>
   </nav>
   <h3>
