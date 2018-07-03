@@ -37,3 +37,6 @@ DEFAULT_DATE_FORMAT = '%b %d %Y'
 
 # Used for copyright notice.
 CURRENT_YEAR = datetime.datetime.now().year
+
+# Used for adding images to blog posts
+STATIC_PATHS = ['images']
